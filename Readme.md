@@ -23,7 +23,7 @@ Se crea dos simbolos no terminales que son **G** es el que da acceso a la raiz y
 
 ```
 
-   >[!NOTA]
+   >[!NOTE]
    >
    >No se puede asignar el simbolo de √ en goldparser porque C# lo toma como error, dejandolo como 'sqrt'
 
@@ -64,4 +64,25 @@ Si la gramatica esta correcta nos dejara avanzar hasta el paso 4, donde ya nos s
 En la siguiente imagen muestre que la gramatica es correcta y nos dejo avanzar hasta el nivel 4, guardamos el archivo con una extension .CGT
 
 ![ALT](img_MD/GOLDPARSER2.png)
+
+### GENERAR ESQUELETO PARA CS
+
+Generamos el esqueleto para c#. Esto nos generara una clase para implementarlo en la interfaz grafica de la calculadora.
+![ALT](img_MD/GOLDPARSER3.png)
+![ALT](img_MD/GOLDPARSER4.png)
+
+Por ultimo en el icono de guardamos la gramatica pulsando el icono de Guardar para guardar la gramatica. en total nos debe generar 3 archivos que se presentan en la siguiente imagen.
+
+![ALT](img_MD/GOLDPARSER5.png)
+
+### TESTEO DE GRAMATICAS EN GOLD PARSER
+
+Para hacer pruebas si funciona nuestra gramatica nos vamos a las siguientes pestañas. **windows - Test Grammar**
+
+![ALT](img_MD/GOLDPARSER6.png)
+
+Ingresamos una ecuacion que consideremos correcta, por ejemplo tan(50), si es correcta nos mostrara una ventana de que se redujo con exito. PROBAR CON DISTINTAS ECUACIONES
+![ALT](img_MD/GOLDPARSER7.png)
+
+## CREACION DE LA CALCULADORA EN C
 
